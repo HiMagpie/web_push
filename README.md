@@ -3,3 +3,6 @@
 
 ### 开发
 该模块使用 Beego Web 框架进行开发。
+
+
+![web_push](./web_push.png)
