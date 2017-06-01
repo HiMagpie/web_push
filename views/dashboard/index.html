@@ -1,0 +1,153 @@
+{{ template "common/header.html" .}}
+<br>
+
+<div class="container theme-showcase" role="main">
+
+    <div class="row">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#add-model">
+            <i class="glyphicon glyphicon-plus"></i> 添加应用
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="add-model" tabindex="-1" role="dialog" aria-labelledby="addModelLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><i class="glyphicon glyphicon-plus"></i> 添加应用</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="input-group">
+                            <span class="input-group-addon">应用名称</span>
+                            <input type="text" class="form-control" id="ipt-app-name" placeholder="例如: Wonder App">
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                        <button id="btn-add-app" type="button" class="btn btn-primary">保存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row" style="min-height: 300px;">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>应用名称</th>
+                <th>App ID</th>
+                <th>应用密钥 / 推送密钥</th>
+                <th>创建时间</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+
+            {{range $i, $app := .apps}}
+            <tr>
+                <td><span class="label label-success">{{$app.Id}}</span></td>
+                <td>{{$app.Name}}</td>
+                <td>{{$app.AppId}}</td>
+                <td>
+                    <a href="javascript:void(0);"  class="label label-danger" title="应用密钥(保密)"
+                       data-container="body" data-toggle="popover" data-placement="top" data-trigger="click"
+                       data-content="<p>{{$app.AppSecret}}</p>" data-html="true">
+                        <i class="glyphicon glyphicon-cloud"></i> 应用密钥
+                    </a>
+                    <span class="place-block"></span>
+                    <a href="javascript:void(0);" class="label label-primary"  title="推送密钥(保密)"
+                       data-container="body" data-toggle="popover" data-placement="top" data-trigger="click"
+                       data-content="<p>{{$app.MasterSecret}}</p>" data-html="true">
+                        <i class="glyphicon glyphicon-bullhorn"></i> 推送密钥
+                    </a>
+                </td>
+                <td>{{$app.Ctime}}</td>
+                <td>
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#edit-model">
+                        <i class="glyphicon glyphicon-pencil"></i> 编辑
+                    </button>
+                    <span class="place-block"></span>
+
+                    <button class="btn btn-default" type="button" data-toggle="collapse"
+                            data-target="#del-confirm-{{$app.Id}}" aria-expanded="false"
+                            aria-controls="collapseExample">
+                        <i class="glyphicon glyphicon-remove"></i> 删除
+                    </button>
+                </td>
+            </tr>
+            {{end}}
+
+        </table>
+    </div>
+
+    <!--编辑应用-->
+    <div class="modal fade" id="edit-model" tabindex="-1" role="dialog" aria-labelledby="edit-model">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="editModelLabel"><i class="glyphicon glyphicon-pencil"></i> 编辑应用</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="input-group">
+                        <span class="input-group-addon">应用名称</span>
+                        <input type="text" class="form-control" placeholder="例如: Wonder App">
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--<div class="row">-->
+    <!--<div class="col-md-12">-->
+    <!--<nav>-->
+    <!--<ul class="pagination">-->
+    <!--<li>-->
+    <!--<a href="#" aria-label="Previous" class="page-item">-->
+    <!--<span aria-hidden="true">&laquo; 上一页</span>-->
+    <!--</a>-->
+    <!--</li>-->
+    <!--<li><a href="#" class="page-item">1</a></li>-->
+    <!--<li><a href="#" class="page-item">2</a></li>-->
+    <!--<li><a href="#" class="page-item">3</a></li>-->
+    <!--<li><a href="#" class="page-item">4</a></li>-->
+    <!--<li><a href="#" class="page-item">5</a></li>-->
+    <!--<li>-->
+    <!--<a href="#" aria-label="Next" class="page-item">-->
+    <!--<span aria-hidden="true">下一页 &raquo;</span>-->
+    <!--</a>-->
+    <!--</li>-->
+    <!--</ul>-->
+    <!--</nav>-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <script>
+        $(function(){
+            $("[data-toggle='popover']").popover();
+        });
+
+    </script>
+</div>
+
+</div>
+
+{{ template "common/footer.html" .}}
+

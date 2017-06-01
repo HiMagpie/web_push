@@ -1,0 +1,250 @@
+@charset "utf-8";
+/*##页面架构*/
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: '微软雅黑', verdana, arial;
+}
+
+/*
+YUI 3.4.1 (build 4118)
+Copyright 2011 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+
+html {
+    color: #000;
+    background: #FFF
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+fieldset, img {
+    border: 0
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal
+}
+
+ol, ul {
+    list-style: none
+}
+
+caption, th {
+    text-align: left
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+q:before, q:after {
+    content: ''
+}
+
+abbr, acronym {
+    border: 0;
+    font-variant: normal
+}
+
+sup {
+    vertical-align: text-top
+}
+
+sub {
+    vertical-align: text-bottom
+}
+
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit
+}
+
+input, textarea, select {
+    *font-size: 100%
+}
+
+legend {
+    color: #000
+}
+
+p {
+    line-height: 1.6em;
+}
+
+::selection {
+    background: #5cb85c;
+    color: #fff;
+}
+
+::-moz-selection {
+    background: #dd4b39;
+    color: #fff;
+}
+
+::-webkit-selection {
+    background: #dd4b39;
+    color: #fff;
+}
+
+a {
+    color: #dd4b39;
+}
+
+.slogan {
+    font-size: 20px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.v-header {
+    padding: 15px 0;
+}
+
+.v-brand-link {
+    text-decoration: none !important;
+}
+
+.v-brand-link > img {
+    display: inline-block;
+    width: 40px;
+}
+
+.v-brand-info {
+    display: block;
+    margin: 7px 0 0 5px;
+}
+
+.v-brand {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.0em;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.v-slogan {
+    font-size: 18px;
+    color: #999;
+}
+
+.v-nav {
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important;
+    border: 0 solid #fff!important;
+    margin-bottom: 0!important;
+    padding-bottom: 0!important;
+}
+
+.module-title {
+    border-left: 5px solid #5cb85c;
+    padding-left: 10px;
+    margin: 10px 0 20px 0;
+    font-size: 22px;
+}
+
+.page-item {
+    -moz-border-radius: 30px !important;
+    -webkit-border-radius: 30px !important;
+    border-radius: 30px !important;
+    margin: 0 10px 0 0;
+    border-color: #666 !important;
+    color: #666 !important;
+    transition: border, background 500ms;
+    -moz-transition: border, background 500ms;
+    -webkit-transition: border, background 500ms;
+    -o-transition: border, background 500ms;
+}
+
+.page-item-active,
+.page-item:hover {
+    border-color: #11cd6e !important;
+    color: #fff !important;
+    background: #11cd6e !important;
+}
+
+.v-footer {
+    background: #202020;
+    padding: 20px 0px;
+}
+
+.v-footer h4 {
+    color: #fff !important;
+    font-weight: normal;
+}
+
+.friend-links a {
+    display: block;
+    color: #aaa;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px 0;
+    border-bottom: 1px dashed #333;
+}
+
+.tag-cloud {
+    margin-top: 20px;
+}
+.tag-cloud a{
+    display: inline-block;
+    color: #999;
+    border: 1px solid #999;
+    padding: 3px 5px;
+    -moz-border-radius: 3px !important;
+    -webkit-border-radius: 3px !important;
+    border-radius: 3px !important;
+    margin: 0 5px 10px 0;
+}
+
+.tag-cloud a:hover {
+    color: #fff;
+    border: 1px solid #fff;
+    text-decoration: none;
+}
+
+.friend-links a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyright {
+    padding: 20px 0;
+    text-align: center;
+    background: #111;
+    color: #555;
+}
+
+.copyright a {
+    color: #555;
+}
+
+.copyright a:hover {
+    color: #555;
+}
+
+.home-cover {
+    width: 100%;
+    height: 400px;
+    background: url("/public/img/bg.jpg");
+    margin-top: 0!important!
+}
+
+.place-block {
+    display: inline-block;
+    width: 10px;
+}

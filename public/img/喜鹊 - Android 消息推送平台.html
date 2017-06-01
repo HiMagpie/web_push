@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://localhost:8080/dashboard/index -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://localhost:8080/favicon.ico">
+
+    <title>喜鹊 - Android 消息推送平台</title>
+
+    <link href="./喜鹊 - Android 消息推送平台_files/style.css" rel="stylesheet">
+
+    
+    <link href="./喜鹊 - Android 消息推送平台_files/bootstrap.min.css" rel="stylesheet">
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+
+<body role="document" class="">
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-8 v-header">
+            <a href="http://localhost:8080/" class="v-brand-link pull-left">
+                <img src="./喜鹊 - Android 消息推送平台_files/logo.png" alt="喜鹊">
+            </a>
+            <div class="v-brand-info pull-left">
+                <h2 class="v-brand">喜鹊</h2>
+                <span class="v-slogan"> - Android 消息推送平台</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<nav class="navbar navbar-inverse v-nav">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class=""><a href="http://localhost:8080/">首页</a></li>
+                <li class=""><a href="http://localhost:8080/home/doc">文档</a></li>
+                <li class="active"><a href="http://localhost:8080/dashboard/index">管理中心</a></li>
+                <li class="dropdown">
+                    <a href="http://localhost:8080/dashboard/index#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://localhost:8080/dashboard/index#">Action</a></li>
+                        <li><a href="http://localhost:8080/dashboard/index#">Another action</a></li>
+                        <li><a href="http://localhost:8080/dashboard/index#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">Nav header</li>
+                        <li><a href="http://localhost:8080/dashboard/index#">Separated link</a></li>
+                        <li><a href="http://localhost:8080/dashboard/index#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</nav>
+
+
+
+
+
+
+
+<br>
+
+<div class="container theme-showcase" role="main">
+
+    <div class="row">
+        
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#add-model">
+            <i class="glyphicon glyphicon-plus"></i> 添加应用
+        </button>
+
+        
+        <div class="modal fade" id="add-model" tabindex="-1" role="dialog" aria-labelledby="addModelLabel" style="display: none;">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><i class="glyphicon glyphicon-th"></i> 添加应用</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="input-group">
+                            <span class="input-group-addon">应用名称</span>
+                            <input type="text" class="form-control" placeholder="例如: Wonder App">
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-primary">保存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>应用名称</th>
+                <th>App ID</th>
+                <th>App Secret</th>
+                <th>Master Secret</th>
+                <th>创建时间</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+
+            
+            <tbody><tr>
+                <td><span class="label label-success">10</span></td>
+                <td>每日精选</td>
+                <td>app_id</td>
+                <td>app_secret</td>
+                <td>master_secret</td>
+                <td>2016-02-29 15:13:38</td>
+                <td>
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#edit-model">
+                        <i class="glyphicon glyphicon-pencil"></i> 编辑
+                    </button>
+                    <span class="place-block"></span>
+
+                    <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#del-confirm-10" aria-expanded="false" aria-controls="collapseExample">
+                        <i class="glyphicon glyphicon-remove"></i> 删除
+                    </button>
+                </td>
+            </tr>
+            
+            <tr>
+                <td><span class="label label-success">9</span></td>
+                <td>QAlarm</td>
+                <td>app_id</td>
+                <td>app_secret</td>
+                <td>master_secret</td>
+                <td>2016-02-29 15:13:37</td>
+                <td>
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#edit-model">
+                        <i class="glyphicon glyphicon-pencil"></i> 编辑
+                    </button>
+                    <span class="place-block"></span>
+
+                    <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#del-confirm-9" aria-expanded="false" aria-controls="collapseExample">
+                        <i class="glyphicon glyphicon-remove"></i> 删除
+                    </button>
+                </td>
+            </tr>
+            
+            <tr>
+                <td><span class="label label-success">8</span></td>
+                <td>导航业务</td>
+                <td>app_id</td>
+                <td>app_secret</td>
+                <td>master_secret</td>
+                <td>2016-02-29 15:13:24</td>
+                <td>
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#edit-model">
+                        <i class="glyphicon glyphicon-pencil"></i> 编辑
+                    </button>
+                    <span class="place-block"></span>
+
+                    <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#del-confirm-8" aria-expanded="false" aria-controls="collapseExample">
+                        <i class="glyphicon glyphicon-remove"></i> 删除
+                    </button>
+                </td>
+            </tr>
+            
+            <tr>
+                <td><span class="label label-success">7</span></td>
+                <td>新奇App</td>
+                <td>app_id</td>
+                <td>app_secret</td>
+                <td>master_secret</td>
+                <td>2016-02-29 14:49:52</td>
+                <td>
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#edit-model">
+                        <i class="glyphicon glyphicon-pencil"></i> 编辑
+                    </button>
+                    <span class="place-block"></span>
+
+                    <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#del-confirm-7" aria-expanded="false" aria-controls="collapseExample">
+                        <i class="glyphicon glyphicon-remove"></i> 删除
+                    </button>
+                </td>
+            </tr>
+            
+            <tr>
+                <td><span class="label label-success">6</span></td>
+                <td>手机助手</td>
+                <td>app_id</td>
+                <td>app_secret</td>
+                <td>master_secret</td>
+                <td>2016-02-29 14:01:41</td>
+                <td>
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#edit-model">
+                        <i class="glyphicon glyphicon-pencil"></i> 编辑
+                    </button>
+                    <span class="place-block"></span>
+
+                    <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#del-confirm-6" aria-expanded="false" aria-controls="collapseExample">
+                        <i class="glyphicon glyphicon-remove"></i> 删除
+                    </button>
+                </td>
+            </tr>
+            
+
+        </tbody></table>
+    </div>
+
+    
+    <div class="modal fade" id="edit-model" tabindex="-1" role="dialog" aria-labelledby="edit-model" style="display: none;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title" id="editModelLabel"><i class="glyphicon glyphicon-th"></i> 编辑应用</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="input-group">
+                        <span class="input-group-addon">应用名称</span>
+                        <input type="text" class="form-control" placeholder="例如: Wonder App">
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</div>
+
+
+<footer class="v-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="widget">
+                    <h4 class="title">友情链接</h4>
+                    <div class="content friend-links">
+                        <a href="http://www.bootcss.com/" title="Bootstrap中文网" onclick="_hmt.push([&#39;_trackEvent&#39;, &#39;link&#39;, &#39;click&#39;, &#39;Bootstrap中文网&#39;])" target="_blank">Bootstrap中文网</a>
+                        <a href="http://www.golaravel.com/" title="Laravel中文网" onclick="_hmt.push([&#39;_trackEvent&#39;, &#39;link&#39;, &#39;click&#39;, &#39;Laravel中文网&#39;])" target="_blank">Laravel中文网</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="widget">
+                    <h4 class="title">技术</h4>
+                    <div class="content tag-cloud">
+                        <a href="http://www.bootcss.com/" title="Bootstrap" onclick="_hmt.push([&#39;_trackEvent&#39;, &#39;link&#39;, &#39;click&#39;, &#39;Bootstrap中文网&#39;])" target="_blank">Bootstrap</a>
+                        <a href="http://www.jquery123.com/" title="jQuery中文文档" onclick="_hmt.push([&#39;_trackEvent&#39;, &#39;link&#39;, &#39;click&#39;, &#39;jQuery中文文档&#39;])" target="_blank">jQuery</a>
+                        <a href="http://golang.org/" title="Gulp中文网" onclick="_hmt.push([&#39;_trackEvent&#39;, &#39;link&#39;, &#39;click&#39;, &#39;Gulp中文网&#39;])" target="_blank">Golang</a>
+                        <a href="http://golang.org/" title="Gulp中文网" onclick="_hmt.push([&#39;_trackEvent&#39;, &#39;link&#39;, &#39;click&#39;, &#39;Gulp中文网&#39;])" target="_blank">MySQL</a>
+                        <a href="http://golang.org/" title="Gulp中文网" onclick="_hmt.push([&#39;_trackEvent&#39;, &#39;link&#39;, &#39;click&#39;, &#39;Gulp中文网&#39;])" target="_blank">Redis</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="widget">
+                    <h4 class="title">赞助商</h4>
+                    <div class="content friend-links">
+                        <a href="https://hulk.corp.qihoo.net/" title="Hulk" target="_blank">Hulk 云平台</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <span>Copyright © <a href="http://expo.bootcss.com/">喜鹊推送</a></span> |
+                <span><a href="http://www.miibeian.gov.cn/" target="_blank">粤ICP备1234号</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="./喜鹊 - Android 消息推送平台_files/jquery.min.js"></script>
+<script src="./喜鹊 - Android 消息推送平台_files/bootstrap.min.js"></script>
+
+
+
+
+
+
+</body></html>
